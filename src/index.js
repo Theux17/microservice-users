@@ -1,1 +1,3 @@
-module.exports = (req, res) => 'Hello World'
+const routes = require('./routes')
+
+module.exports = routes
