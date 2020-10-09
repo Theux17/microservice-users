@@ -3,7 +3,7 @@ const { router, get, post, put, del } = require('microrouter')
 
 const users = require('./controllers/UserController')
 
-const notfound = (req, res) => send(res, 404, {message: 'Rota não encontrada.'})
+const notfound = (req, res) => send(res, 404, {error: 'Route not found'})
 
 module.exports =  router(
     get('/users', users.index),
