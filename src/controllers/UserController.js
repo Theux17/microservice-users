@@ -82,7 +82,6 @@ module.exports = {
                 email: user.email,
                 address: user.address,
                 created_at: user.created_at,
-                updated_at: user.updated_at
             }
 
             return send(res, 200, { user })
